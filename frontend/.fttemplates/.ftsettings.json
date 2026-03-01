@@ -1,0 +1,18 @@
+{
+  "FSDShared": {
+    "_comment": "Shared компонент - создает папку с именем entity и всю структуру внутри",
+    "openFilesWhenDone": ["index.tsx", "styles.ts"]
+  },
+  "FSDEntity": {
+    "_comment": "Entity с Redux и UI - создает папку с именем entity и всю структуру внутри",
+    "openFilesWhenDone": ["ui/index.ts", "model/types.ts"]
+  },
+  "FSDFeature": {
+    "_comment": "Полная фича с Redux - создает папку с именsем фичи и всю структуру внутри",
+    "openFilesWhenDone": ["ui/index.tsx", "model/types.ts"]
+  },
+  "UIComponent": {
+    "_comment": "Компонент UI",
+    "openFilesWhenDone": ["<FTName | paramcase>.tsx"]
+  }
+}

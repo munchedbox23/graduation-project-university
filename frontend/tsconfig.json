@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "./build/",
+    "target": "ES2015",
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "noImplicitAny": true,
+    "noUnusedParameters": true,
+    "allowJs": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "bundler",
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@app": ["./src/app"],
+      "@entities/*": ["./src/entities/*"],
+      "@entities": ["./src/entities"],
+      "@shared/*": ["./src/shared/*"],
+      "@shared": ["./src/shared"],
+      "@widgets/*": ["./src/widgets/*"],
+      "@widgets": ["./src/widgets"],
+      "@features/*": ["./src/features/*"],
+      "@features": ["./src/features"],
+      "@pages/*": ["./src/pages/*"],
+      "@pages": ["./src/pages"]
+    },
+    "types": ["node"]
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "include": ["types", "./src/**/*.ts", "./src/**/*.tsx", "src/app/types/*"],
+  "exclude": ["node_modules/**/*"]
+}
