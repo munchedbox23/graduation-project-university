@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "webpack serve --env mode=development --port=3001",
+    "start:dev": "webpack serve --env mode=development",
     "build:dev": "webpack --env mode=development",
     "build:prod": "webpack --env mode=production",
     "lint:types": "tsc --noEmit",
@@ -101,13 +101,17 @@
     "webpack-dev-server": "5.2.2"
   },
   "dependencies": {
+    "@ant-design/icons": "^6.1.0",
     "@reduxjs/toolkit": "2.11.0",
+    "antd": "^6.3.1",
     "babel-plugin-jsx-remove-data-test-id": "3.0.0",
+    "dayjs": "^1.11.19",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "react-error-boundary": "6.0.0",
     "react-redux": "9.2.0",
     "react-router-dom": "7.9.6",
+    "recharts": "^3.7.0",
     "redux": "5.0.1",
     "uuid": "13.0.0",
     "web-vitals": "5.1.0"

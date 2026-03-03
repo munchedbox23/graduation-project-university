@@ -11,7 +11,7 @@ export default (env: IBuildEnv) => {
   dotenv.config({ path: path.resolve(__dirname, ".env") });
 
   const mode = env.mode || process.env.NODE_ENV || "development";
-  const PORT = env?.port ?? process.env.PORT ?? "3001";
+  const PORT = env.port ?? process.env.PORT
   const API_URL = env?.apiUrl || process.env.API_SERVICE_URL
 
   const paths: IBuildPaths = {
