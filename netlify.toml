@@ -1,0 +1,13 @@
+[build]
+  base    = "frontend"
+  command = "npm run build:prod"
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# SPA fallback — React Router работает при обновлении страницы
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
