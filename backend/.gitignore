@@ -3,4 +3,4 @@
 *.exe~
 /server
 /tmp
-./migrations
+migrations
